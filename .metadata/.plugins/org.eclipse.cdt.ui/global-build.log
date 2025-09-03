@@ -1,0 +1,179 @@
+12:17:09 **** Rebuild of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+12:17:59 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+14:11:31 **** Rebuild of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+14:22:31 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+14:39:41 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+15:15:31 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+..\src\Keylogger.cpp: In function 'void log()':
+..\src\Keylogger.cpp:226:21: error: duplicate case value
+                     case VK_DELETE:
+                     ^~~~
+..\src\Keylogger.cpp:196:21: error: previously used here
+                     case 46:
+                     ^~~~
+15:18:28 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+..\src\Keylogger.cpp: In function 'void log()':
+..\src\Keylogger.cpp:236:21: error: duplicate case value
+                     case VK_DELETE:
+                     ^~~~
+..\src\Keylogger.cpp:203:21: error: previously used here
+                     case 46:
+                     ^~~~
+15:18:55 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+15:25:03 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+15:34:27 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+15:34:40 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+15:39:21 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Keylogger.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:39:25 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+15:50:06 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+..\src\Keylogger.cpp: In function 'void log()':
+..\src\Keylogger.cpp:156:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_MINUS:
+                     ^~~~
+..\src\Keylogger.cpp:159:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_PLUS:
+                     ^~~~
+..\src\Keylogger.cpp:162:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_4:
+                     ^~~~
+..\src\Keylogger.cpp:165:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_6:
+                     ^~~~
+..\src\Keylogger.cpp:168:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_5:
+                     ^~~~
+..\src\Keylogger.cpp:171:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_1:
+                     ^~~~
+..\src\Keylogger.cpp:174:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_7:
+                     ^~~~
+..\src\Keylogger.cpp:177:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_COMMA:
+                     ^~~~
+..\src\Keylogger.cpp:180:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_PERIOD:
+                     ^~~~
+..\src\Keylogger.cpp:183:21: warning: case label value exceeds maximum value for type
+                     case VK_OEM_2:
+                     ^~~~
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+15:52:23 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+21:09:54 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+..\src\Keylogger.cpp: In function 'void log()':
+..\src\Keylogger.cpp:231:21: error: duplicate case value
+                     case VK_RETURN:
+                     ^~~~
+..\src\Keylogger.cpp:141:21: error: previously used here
+                     case VK_RETURN:
+                     ^~~~
+21:10:18 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+21:17:17 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Keylogger.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:17:24 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Keylogger.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:17:36 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Keylogger.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:19:11 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Keylogger.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:19:13 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
+21:21:11 **** Incremental Build of configuration Debug for project Keylogger ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Keylogger.o" "..\\src\\Keylogger.cpp" 
+g++ -o Keylogger.exe "src\\Keylogger.o" 
+Info: Nothing to build for Keylogger
+Info: Nothing to build for Keylogger
