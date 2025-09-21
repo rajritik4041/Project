@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .image1 {
+            width: 200px;
+            height: 50px;
+            margin: 0px 100px 0px 0px;
+        }
+
+        .Container {
+            height: 500px;
+        }
+
+        .Row {
+            display: grid;
+            margin: 0% 19.2%;
+            grid-template-columns: 302px 302px 302px;
+            grid-template-rows: 150px;
+            gap: 10px;
+        }
+
+        .ROW {
+            margin: 0% 19.2%;
+            grid-template-columns: 906px;
+            grid-template-rows: 150px;
+            gap: 10px;
+        }
+
+
+        .Coloum {
+            background-color: #f9f9f9;
+            margin: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 0px;
+        }
+
+        h6 {
+            text-align: center;
+            padding: 0px;
+            margin: -10px;
+        }
+
+        .button2 {
+            background-color: #21cc21;
+            color: #ffffff;
+            margin: 20px 5px;
+            padding: 8px 16px;
+            font-size: 12px;
+            border: none;
+            font-weight: 600;
+            border-radius: 6px;
+        }
+
+        .button1 {
+            background-color: #00b6d1;
+            color: #ffffff;
+            margin: 20px 5px;
+            padding: 8px 16px;
+            font-size: 12px;
+            border: none;
+            font-weight: 600;
+            border-radius: 6px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .Download {
+            margin: 5px;
+            margin-left: 20px;
+            border: 2px solid black;
+            font-size: medium;
+            font-weight: 600;
+            padding: 8px;
+
+        }
+
+        #Main {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #Products {
+            border: 0px solid red;
+            text-align: center;
+            width: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+        }
+
+        #Pricing {
+            border: 0px solid red;
+            text-align: center;
+            width: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+        }
+
+        #Resources {
+            border: 0px solid red;
+            text-align: center;
+            width: 90px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+        }
+
+        .image2 {
+            display: inline-flex;
+        }
+
+        #Company {
+            border: 0px solid red;
+            text-align: center;
+            width: 110px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+        }
+
+        #Products {
+            border: 0px solid red;
+            text-align: center;
+            width: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+        }
+
+        #Images {
+            width: 25px;
+            height: 25px;
+            align-items: center;
+            margin: 15px -10px 0px 18px;
+        }
+
+        .h {
+            margin: 15px 50px 0px 18px;
+            /* margin: 0px 0px 0px 0px ; */
+            /* text-align: center ; */
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            justify-content: center;
+        }
+
+        .Search {
+            margin: 15px -10px 0px 18px;
+            width: 25px;
+            height: 25px;
+        }
+
+        #Container {
+            justify-self: center;
+            margin-top: 30px;
+            margin-bottom: 70px;
+        }
+
+        strong {
+            font-weight: 700;
+            line-height: 2.3%;
+        }
+
+        .center,
+        .paragraph {
+            justify-self: center;
+            gap: 100px;
+            position: relative;
+            margin: 0;
+        }
+
+        .Button {
+            justify-self: center;
+            padding-bottom: 40px;
+        }
+
+        .Mac {
+            width: 300px;
+            height: 50px;
+            color: #f9f9f9;
+            font-size: 14px;
+            background-color: #00b6d1;
+            border-width: 0 !important;
+            border-radius: 5px;
+            font-weight: 700;
+            font-style: normal;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .center h1eere {
+            font-size: 48px;
+        }
+
+        .images11 {
+            width: 50px;
+            height: 50px;
+        }
+
+        p {
+            width: 960px;
+            height: 72.4px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .Imageaning {
+            background-size: 60px auto;
+            background-position: left center;
+            background-position-x: left;
+            background-position-y: center;
+            background-image: url(https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png);
+            padding-top: 15px !important;
+            padding-bottom: 15px !important;
+            padding-left: 80px !important;
+            background-repeat: no-repeat;
+            display: flex;
+            /* justify-self: center; */
+            align-items: baseline;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Container">
+        <div id="Main">
+            <div class="logo">
+                <img class="image1" src="assets/Images/Dark-logo.png" alt="Logo">
+            </div>
+            <div class="Select">
+                <ul>
+                    <li> <select name="" id="Products">
+                            <option>Product</option>
+                            <option>Tools & free trials</option>
+                            <option>UltraEdit Enterprise</option>
+                            <option>UltraEdit</option>
+                        </select></li>
+                    <li> <select name="" id="Pricing">
+                            <option>Pricing</option>
+                            <option>Get a quote</option>
+                            <option>For students and educators</option>
+                            <option>Security & compliance</option>
+                            <option>Licensing FAQs</option>
+                            <option>International distributors & partners</option>
+                        </select></li>
+                    <li>
+                        <select name="sdewse" id="Resources">
+                            <option value="">Resources</option>
+                            <option value="">Extra downloads</option>
+                            <option value="">Wiki documentation</option>
+                            <option value="">Video tutorials</option>
+                            <option value="">Power tips</option>
+                            <option value="">Blog</option>
+                            <option value="">White Papers</option>
+                            <option value="">Support</option>
+                            <option value="">Coding languages</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select name="" id="Company">
+                            <option value="">Our company</option>
+                            <option value="">About us</option>
+                            <option value="">Events</option>
+                            <option value="">Testimonials</option>
+                            <option value="">Contact Us</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="Download">
+                DOWNLOAD
+            </div>
+            <div class="image2">
+                <img id="Images" src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt="">
+                <div class="h">
+                    English
+                </div>
+            </div>
+            <div class="Search">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <h1eere>Download <strong>UltraEdit</strong> for Windows&nbsp; <a
+                href="https://www.g2.com/products/ultraedit/reviews/" target="__blank" rel="noopener"><img
+                    decoding="async" src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" width="112"
+                    height="32" alt="Reviews" class="wp-image-1613 alignnone size-full"></a></h1eere>
+    </div>
+    <div class="paragraph">
+        <p>
+            Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor.
+        </p>
+    </div>
+    <div class="Button">
+        <button class="Mac">
+            DOWNLOAD MAC OR LINUX VERSION
+        </button>
+    </div>
+    <div class="Down">
+        <div class="Container">
+            <div class="ROW">
+                <div class="Imageaning">
+                    <h1>
+                        Download UltraEdit
+                    </h1>
+                    <small>
+                        v2025.0.0.39 (released 2025-08-06) | Latest changes
+                    </small>
+                </div>
+            </div>
+            <div class="Row">
+                <div class="Coloum">
+                    <h2> English
+                    </h2>
+                    <h6>
+                        United States
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+                <div class="Coloum">
+                    <h2>Deutsch
+                    </h2>
+                    <h6>
+                        German
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+                <div class="Coloum">
+                    <h2>
+                        Italiano
+                    </h2>
+                    <h6>
+                        Italian
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+            </div>
+            <div class="Row">
+                <div class="Coloum">
+                    <h2>
+                        Español
+                    </h2>
+                    <h6>
+                        Spanish
+                    </h6>
+
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+                <div class="Coloum">
+                    <h2>
+                        français
+                    </h2>
+                    <h6>
+                        French
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+                <div class="Coloum">
+                    <h2>
+                        Português brasileiro
+                    </h2>
+                    <h6>
+                        Brazilian Portuguese
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="Row">
+                <div class="Coloum">
+                    <h2>
+                        日本
+                    </h2>
+                    <h6>
+                        Japanese
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+                <div class="Coloum">
+                    <h2>
+                        한국어
+                    </h2>
+                    <h6>
+                        Korean
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+                <div class="Coloum">
+                    <h2>
+                        华语
+                    </h2>
+                    <h6>
+                        Chinese
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+            </div>
+            <div class="Row">
+                <div class="Coloum">
+                    <h2>
+                        華語
+                    </h2>
+                    <h6>
+                        Traditional Chinese
+                    </h6>
+                    <button class="button1">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            32-bit</a>
+                    </button>
+                    <button class="button2">
+                        <a
+                            href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1z0pmc5*_gcl_au*ODg5NzM1NDguMTc1NzU5NTA1NQ..*_ga*NTc0MTgzMTU0LjE3NTc1OTUwNTY.*_ga_QNXHVTPWNS*czE3NTgxODg1NjckbzgkZzEkdDE3NTgxOTA4MDEkajQkbDAkaDc5MDI5NzA4NA..">Download
+                            64-bit</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
